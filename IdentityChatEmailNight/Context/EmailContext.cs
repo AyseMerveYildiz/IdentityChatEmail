@@ -10,5 +10,6 @@ namespace IdentityChatEmailNight.Context
 		{
 			optionsBuilder.UseSqlServer("Server=MERMILIUS;initial Catalog=EmailChatNightDb;integrated security=true;trust server certificate=true");
 		}
-	}
+        public DbSet<Message>Messages { get; set; }
+    }
 }
